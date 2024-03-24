@@ -409,4 +409,10 @@ Re-optimizing dependencies because vite config has changed
 Abrir la siguiente URL en el navegador preferido: http://localhost:4200/
 <img width="1164" alt="Captura de pantalla 2024-03-24 a la(s) 6 12 33 p  m" src="https://github.com/dpinochet/prueba-seleccion-mmc/assets/15107464/2c8e8df1-6a3c-43eb-862d-40fee6fbfef4">
 
+Seleccionar archivo Excel consultas febrero 2024:
+
+<img width="706" alt="Captura de pantalla 2024-03-24 a la(s) 6 14 06 p  m" src="https://github.com/dpinochet/prueba-seleccion-mmc/assets/15107464/66c33524-75f4-4d57-af49-6dbeb7295e82">
+
+Generación de gráfica comparada:
+
 
