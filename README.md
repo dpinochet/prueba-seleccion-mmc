@@ -290,3 +290,126 @@ Como se ha comentado anteriormente, utilizando la librería Flask, se debe ejecu
 
 Sugiero, en el home del usuario, crear una carpeta base para alojar allí todos los archivos del proyecto. Por tanto, sólo se debe crear y luego extraer el contenido ZIP en esa carpeta.
 
+```
+~ % mkdir prueba-seleccion-daniel
+~ % cd prueba-seleccion-daniel
+~ % git clone https://github.com/dpinochet/prueba-seleccion-mmc.git
+
+Clonando en 'prueba-seleccion-mmc'...
+remote: Enumerating objects: 7311, done.
+remote: Counting objects: 100% (4/4), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 7311 (delta 0), reused 4 (delta 0), pack-reused 7307
+Recibiendo objetos: 100% (7311/7311), 53.00 MiB | 4.82 MiB/s, listo.
+Resolviendo deltas: 100% (762/762), listo.
+Actualizando archivos: 100% (7285/7285), listo.
+```
+
+Al listar el contenido, se visualizará la carpeta que contiene el proyecto completo:
+```
+~ % ls -l 
+drwxr-xr-x  9 danielpinochet  staff  288 Mar 24 16:46 prueba-seleccion-mmc
+```
+
+Es necesario ingresar a la carpeta "prueba-seleccion-mmc"
+```
+~ prueba-seleccion-mmc % cd prueba-seleccion-mmc
+```
+
+#### Paso 2 - Ejecutar micro-backend Python
+
+Cumpliendo con uno de los requisitos de esta selección al cargo, se requiere que la lectura y procesamiento de datos en Excel sea ejecutado desde python. Por tanto, se deberá iniciar el micro-servicio de la siguiente manera:
+
+Ingresar a la carpeta "python_backend"
+```
+prueba-seleccion-mmc % cd python_backend/
+```
+Considerando la probabilidad que el entorno de ejecución no tenga instalado todos los componentes necesarios como: pandas, flask, etc; he dejado configurado un micro entorno virtual. Por tanto es necesario cargarlo al entorno del shell
+```
+python_backend % source .venv/bin/activate
+```
+Y ahora ejecutar el archivo python:
+
+```
+(.venv) python_backend % python3 procesar_excel.py
+ * Serving Flask app 'procesar_excel'
+ * Debug mode: on
+WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+ * Running on http://127.0.0.1:5000
+Press CTRL+C to quit
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 133-157-029
+```
+Se ha iniciado un servicio backend en la puerta 5000 del localhost.
+
+#### Paso 3 - Ejecutar frontend en Angular
+
+En otro shell, se debe tomar como base la carpeta "prueba-seleccion-mmc" (mencionada anteriormente) y desde allí ingresar a la carpeta "angular_frontend":
+```
+prueba-seleccion-mmc % cd angular_frontend/
+angular_frontend %
+```
+
+Ahora es necesario cargar el node 18 :
+```
+angular_frontend % nvm use 18
+Now using node v18.18.2 (npm v10.4.0)
+```
+
+Instalar todas las librerías y dependencias del proyecto:
+```
+angular_frontend % npm i
+npm WARN deprecated ngx-charts@3.0.2: Moved
+
+added 923 packages, and audited 924 packages in 8s
+
+118 packages are looking for funding
+  run `npm fund` for details
+
+2 high severity vulnerabilities
+
+To address all issues (including breaking changes), run:
+  npm audit fix --force
+
+Run `npm audit` for details.
+
+```
+Y ahora ejecutar el ng serve para correr un servicio local en el puerto 4200:
+```
+angular_frontend % npm run start
+
+> consultas@0.0.0 start
+> ng serve
+
+Browser bundles        
+Initial chunk files     | Names               |  Raw size
+polyfills.js            | polyfills           |  83.60 kB | 
+main.js                 | main                |  13.47 kB | 
+styles.css              | styles              |  96 bytes | 
+
+                        | Initial total       |  97.16 kB
+
+
+Server bundles         
+Initial chunk files     | Names               |  Raw size
+chunk-EJML4KTQ.mjs      | -                   |   1.70 MB | 
+main.server.mjs         | main.server         | 629.30 kB | 
+polyfills.server.mjs    | polyfills.server    | 555.05 kB | 
+chunk-VPSODEBW.mjs      | -                   |   2.51 kB | 
+render-utils.server.mjs | render-utils.server | 423 bytes | 
+
+Lazy chunk files        | Names               |  Raw size
+chunk-OTT6LQ5K.mjs      | xhr2                |  39.10 kB | 
+
+Application bundle generation complete. [4.331 seconds]
+
+Watch mode enabled. Watching for file changes...
+Re-optimizing dependencies because vite config has changed
+  ➜  Local:   http://localhost:4200/
+  ➜  press h + enter to show help
+```
+
+#### Paso 4 - Abrir página en navegador Chrome (por ejemplo)
+
+Abrir la siguiente URL en el navegador preferido: http://localhost:4200/
