@@ -415,4 +415,5 @@ Seleccionar archivo Excel consultas febrero 2024:
 
 Generación de gráfica comparada:
 
+<img width="1204" alt="Captura de pantalla 2024-03-24 a la(s) 6 20 10 p  m" src="https://github.com/dpinochet/prueba-seleccion-mmc/assets/15107464/e1724ee1-eab3-474c-818f-83dec789935d">
 
