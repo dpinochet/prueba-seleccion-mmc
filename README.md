@@ -419,4 +419,9 @@ Generación de gráfica comparada:
 
 Comparación año 2020 con 2024: (marcando y desenmarcando años en la gráfica)
 
+<img width="1200" alt="Captura de pantalla 2024-03-24 a la(s) 6 22 40 p  m" src="https://github.com/dpinochet/prueba-seleccion-mmc/assets/15107464/4051a9f1-dd4a-4d05-b4b5-584eacc2bd0e">
+
+
+## Video Instalación y Demostración:
+
 Link video: https://drive.google.com/file/d/1cYvYYyq5GtJ8SlYASjLChHaalGvMpJQJ/view?usp=sharing
