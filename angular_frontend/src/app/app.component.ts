@@ -99,7 +99,7 @@ export class AppComponent {
 
       data: {
         // Valores para X-Axis
-        labels: this.jsonData["2018"].map((dato: { Fecha: any }) =>
+        labels: this.jsonData["2024"].map((dato: { Fecha: any }) =>
           dato.Fecha.substring(8, 10)
         ),
         datasets: [

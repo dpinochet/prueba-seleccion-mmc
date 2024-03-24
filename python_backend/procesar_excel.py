@@ -32,6 +32,7 @@ def sumar_columnas():
 
             # Aquí me aseguro de no leer ultima fila, que contiene total. Me aseguro de leer cada fila para evitar errores en los cálculos
             columna = df.iloc[-1:, i - 1]
+            
 
             # al crear el arreglo, me aseguro de que cada elemento tenga la misma estructura que el archivo historico json.
             dia = {
