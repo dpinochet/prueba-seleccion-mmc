@@ -425,3 +425,6 @@ Comparación año 2020 con 2024: (marcando y desenmarcando años en la gráfica)
 ## Video Instalación y Demostración:
 
 Link video: https://drive.google.com/file/d/1cYvYYyq5GtJ8SlYASjLChHaalGvMpJQJ/view?usp=sharing
+
+<img width="1349" alt="Captura de pantalla 2024-03-24 a la(s) 8 10 21 p  m" src="https://github.com/dpinochet/prueba-seleccion-mmc/assets/15107464/e762684d-8a82-47e5-9524-be5c3426783c">
+
