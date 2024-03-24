@@ -417,3 +417,6 @@ Generación de gráfica comparada:
 
 <img width="1204" alt="Captura de pantalla 2024-03-24 a la(s) 6 20 10 p  m" src="https://github.com/dpinochet/prueba-seleccion-mmc/assets/15107464/e1724ee1-eab3-474c-818f-83dec789935d">
 
+Comparación año 2020 con 2024: (marcando y desenmarcando años en la gráfica)
+
+<img width="1200" alt="Captura de pantalla 2024-03-24 a la(s) 6 22 40 p  m" src="https://github.com/dpinochet/prueba-seleccion-mmc/assets/15107464/4051a9f1-dd4a-4d05-b4b5-584eacc2bd0e">
