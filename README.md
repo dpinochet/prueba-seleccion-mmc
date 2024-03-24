@@ -13,12 +13,6 @@ Marzo 2024
 
 
 
-
-## Captura de Pantallas
-
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
-
-
 ## Declaración dependencias externas
 
 En el desarrollo de del proyecto, he requerido varias librerías externas de Python. A continuación, detallo las principales dependencias:
@@ -410,6 +404,9 @@ Re-optimizing dependencies because vite config has changed
   ➜  press h + enter to show help
 ```
 
-#### Paso 4 - Abrir página en navegador Chrome (por ejemplo)
+## Captura de Pantallas
 
 Abrir la siguiente URL en el navegador preferido: http://localhost:4200/
+<img width="1164" alt="Captura de pantalla 2024-03-24 a la(s) 6 12 33 p  m" src="https://github.com/dpinochet/prueba-seleccion-mmc/assets/15107464/2c8e8df1-6a3c-43eb-862d-40fee6fbfef4">
+
+
