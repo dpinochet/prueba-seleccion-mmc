@@ -1,0 +1,33 @@
+
+<main class="main">
+  <div class="content">
+    <div class="left-side">
+     <img src="../assets/logo_cmm01.png" alt="logo">
+      
+      <h1>Prueba de Selección</h1>
+      <p>Lectura archivo excel y json 🎉 <br> Daniel Pinochet W </p>
+      <p>.</p>
+
+      <h2>Cargar archivo Excel</h2>
+<form >
+  <input type="file" (change)="onFileSelected($event)">
+  <button type="button" (click)="onSubmit()" [disabled]="!selectedFile">Procesar Datos</button>
+</form>
+<p></p>
+
+
+
+
+
+    </div>
+
+  </div>
+
+</main>
+
+<div class="main">
+  <h2> {{ titulo }} </h2>
+  <canvas width="100%"  id="MyChart" >{{ chart }}</canvas>
+  </div>
+
+<router-outlet />
